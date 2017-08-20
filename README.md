@@ -1,26 +1,20 @@
-# Slim Framework 3 Skeleton Application
+# Number API Test Task
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+Number API allows you to generate random values and retrieve them from database by their ids.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+This REST API uses Slim microframework and is based on Slim-Skeleton Template (https://github.com/slimphp/Slim-Skeleton).
 
-## Install the Application
+Enabled REST routes are: 
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+/api/v1/number/generate/
+--returns a Json object containing 'id' and value of a generated number
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+/api/v1/number/retrieve/{id}
+--returns a Json object containing 'id' and value of a number that was requested by its 
+{id} parameter.
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+I've tried to implement Data Mapper as it seemed to me this pattern was the most suitable for the test task
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+Logging of the API workflow is enabled.
 
-To run the application in development, you can also run this command. 
-
-	php composer.phar start
-
-Run this command to run the test suite
-
-	php composer.phar test
-
-That's it! Now go build something cool.
+PHPUnit is also included in the project but tests are not implemented yet (and probably will never be implemented)
