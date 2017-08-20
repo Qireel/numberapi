@@ -13,6 +13,8 @@ Enabled REST routes are:
 --returns a Json object containing 'id' and value of a number that was requested by its 
 {id} parameter.
 
+To set up the application you need to create a mysql database table called 'number' and then put the connection parameters into MysqliAdapter.php class.
+
 I've tried to implement Data Mapper as it seemed to me this pattern was the most suitable for the test task
 
 Logging of the API workflow is enabled.
