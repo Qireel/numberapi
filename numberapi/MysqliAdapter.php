@@ -9,9 +9,9 @@
 		 *	Connection params are hardcoded as consts but why not as it is just a small test task.
 		 */
 		
-		const DB_USER = "tech";
-		const DB_PASS = "techpass";
-		const DB_NAME = "tech_api";
+		const DB_USER = "*";
+		const DB_PASS = "*";
+		const DB_NAME = "*";
 		const DB_HOST = "localhost";
 		
 		/**
